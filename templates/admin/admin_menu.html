@@ -1,0 +1,29 @@
+<head>
+    <title>Админ панель</title>
+  </head>
+<form action="/" method="post">
+<input type="submit" value="Вернуться на главную страницу">
+</form>
+
+
+<form action="/admin_panel/actions/?action=del_string" method="post">
+  {{ error }}
+  <div>
+    <label>
+      Введите текст который желаете удалить
+      <input type="text" name="text", value={{ text }}>
+    </label>
+  </div>
+  <input type="submit" value="Удалить">
+</form>
+
+<form action="/admin_panel/actions/?action=add_string" method="post">
+  {{ error }}
+  <div>
+    <label>
+      Введите текст который желаете добавить
+      <input type="text" name="text", value={{ text }}>
+    </label>
+  </div>
+  <input type="submit" value="Добавить">
+</form>

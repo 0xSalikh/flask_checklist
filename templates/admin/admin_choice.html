@@ -1,0 +1,15 @@
+<form action="/" method="post">
+<input type="submit" value="Вернуться в админ панель">
+</form>
+
+<form action="/admin_panel/actions/?action=del_string_choice" method="post">
+  {{ error }}
+  <div>
+    <label>
+      Выберите текст который желаете удалить
+        {% for text in all_data %}
+            <input type="submit" name="text", value={{ text }}>
+        {% endfor %}
+    </label>
+  </div>
+</form>

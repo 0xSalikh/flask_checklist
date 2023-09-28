@@ -1,0 +1,14 @@
+<head>
+    <title>Резюме | Главная</title>
+  </head>
+<h1>Main Page</h1>
+{{ info }}
+<li><a href="{{ url_for('admin') }}">Admin-Panel</a></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+{% for text in resume %}
+    <li>"{{ text }}"</li>
+{% endfor %}
